@@ -1,7 +1,6 @@
 const User = require('./User');
 const Post = require('./Post');
 const Comment = require('./Comment');
-const { Post } = require('../controllers/homeRoutes');
 
 User.hasMany(Post, {
     foreignKey: 'user_id',
