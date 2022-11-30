@@ -20,6 +20,12 @@ const seedDatabase = async () => {
     });
   }
 
+  for (const { id } of Comment) {
+    const newCmt = await Comment.create({
+      comment_id: id,
+    });
+  }
+
   process.exit(0);
 };
 
